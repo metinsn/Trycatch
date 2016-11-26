@@ -48,24 +48,57 @@ namespace Trycatch
             #endregion
 
             #region ornek3
+            //try
+            //{
+            //    int sayi;
+            //    sayi = Convert.ToInt32(Console.ReadLine());
+            //}
+            //catch (OverflowException ex)
+            //{
+            //    Console.WriteLine("Hata Oluştu ! " + ex.Message);
+            //}
+            //catch (FormatException ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Final kısmı çalıştı");
+            //}
+            //    Console.Read();
+
+            #endregion
+
+            #region ornek4
+
+            //bool state = false;566
+            //int i;
+            //while (!state)
+            //{
+
+            //    state = Int32.TryParse(Console.ReadLine(), out i);
+            //    if (state==false)
+            //    {
+            //        Console.WriteLine("Hatalı Bir giriş yaptın !!! ");
+            //    }
+            //}
+
+            //Console.ReadKey();
+
+            #endregion
+
+            #region ornek5
+
             try
             {
-                int sayi;
-                sayi = Convert.ToInt32(Console.ReadLine());
+                throw new FormatException();
             }
-            catch (OverflowException ex)
-            {
-                Console.WriteLine("Hata Oluştu ! " + ex.Message);
-            }
-            catch (FormatException ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            finally
-            {
-                Console.WriteLine("Final kısmı çalıştı");
-            }
-                Console.Read();
+
+            Console.ReadKey();
 
             #endregion
 
