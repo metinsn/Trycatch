@@ -47,7 +47,7 @@ namespace Trycatch
 
             #endregion
 
-            #region ornek2
+            #region ornek3
             try
             {
                 int sayi;
